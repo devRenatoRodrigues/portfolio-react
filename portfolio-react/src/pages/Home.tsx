@@ -1,53 +1,62 @@
 import Button from "../components/Button";
-import '../styles/Buttons.css'
+import '../styles/Global.css'
 import useNewText from '../hooks/useNewText.tsx'
 
 function Home() {
-    const { toggleIsButton, isButton } = useNewText();
+    const { isAbout,
+        isProjects,
+        isContact,
+        toggleIsAbout,
+        toggleIsProjects,
+        toggleIsContact,
+    } = useNewText();
 
 
     return (
         <>
             <div>
-                {isButton ? (<Button
+                {isAbout ? (<Button
                     onClick={() => console.log('chamou')}
                     tittle={'About'}
                     type={"button"}
-                    className={".on-hover--40 .animate"}
-                    onMouseLeave={toggleIsButton}
+                    className={"giant-button text-color-white"}
+                    onMouseLeave={toggleIsAbout}
 
                 />) : (<h1
-                    onMouseEnter={toggleIsButton}
+                    onMouseEnter={toggleIsAbout}
+                    className={"text-color-white"}
                 >
-                    Hello
+                    Hello ,
                 </h1>)}
             </div>
             <div>
-                {isButton ? (<Button
+                {isProjects ? (<Button
                     onClick={() => console.log('chamou')}
-                    tittle={'Skills'}
+                    tittle={'Projects'}
                     type={"button"}
-                    className={".on-hover--40 .animate"}
-                    onMouseLeave={toggleIsButton}
+                    className={"giant-button text-color-green"}
+                    onMouseLeave={toggleIsProjects}
 
                 />) : (<h1
-                    onMouseEnter={toggleIsButton}
+                    onMouseEnter={toggleIsProjects}
+                    className={"text-color-green"}
                 >
-                    Hello
+                    I am
                 </h1>)}
             </div>
             <div>
-                {isButton ? (<Button
+                {isContact ? (<Button
                     onClick={() => console.log('chamou')}
                     tittle={'Contact'}
                     type={"button"}
-                    className={".on-hover--40 .animate"}
-                    onMouseLeave={toggleIsButton}
+                    className={"giant-button text-color-green"}
+                    onMouseLeave={toggleIsContact}
 
                 />) : (<h1
-                    onMouseEnter={toggleIsButton}
+                    onMouseEnter={toggleIsContact}
+                    className={"text-color-green"}
                 >
-                    Hello
+                    Renato
                 </h1>)}
             </div>
         </>

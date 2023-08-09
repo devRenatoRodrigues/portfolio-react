@@ -5,16 +5,28 @@ export const NewTextContext = createContext();
 
 function UseNewTextProvider({ children }) {
     const {
-        isButton,
-        toggleIsButton
+        isAbout,
+        isProjects,
+        isContact,
+        toggleIsAbout,
+        toggleIsProjects,
+        toggleIsContact,
     } = useNewText();
 
     const context = useMemo(() => ({
-        isButton,
-        toggleIsButton
+        isAbout,
+        isProjects,
+        isContact,
+        toggleIsAbout,
+        toggleIsProjects,
+        toggleIsContact,
     }), [
-        isButton,
-        toggleIsButton
+        isAbout,
+        isProjects,
+        isContact,
+        toggleIsAbout,
+        toggleIsProjects,
+        toggleIsContact,
     ]);
 
     return (
