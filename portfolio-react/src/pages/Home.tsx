@@ -1,6 +1,7 @@
 import Button from "../components/Button";
 import '../styles/Global.css'
 import useNewText from '../hooks/useNewText.tsx'
+import Header from "../components/Header.tsx";
 
 function Home() {
     const { isAbout,
@@ -11,50 +12,46 @@ function Home() {
         toggleIsContact,
     } = useNewText();
 
-
     return (
         <>
-            <div>
+            <Header />
+            <div className="vertical-center">
                 {isAbout ? (<Button
                     onClick={() => console.log('chamou')}
                     tittle={'About'}
                     type={"button"}
-                    className={"giant-button text-color-white"}
+                    className={"giant-button text-color-white item"}
                     onMouseLeave={toggleIsAbout}
 
                 />) : (<h1
                     onMouseEnter={toggleIsAbout}
-                    className={"text-color-white"}
+                    className={"text-color-white item"}
                 >
-                    Hello ,
+                    Hello.
                 </h1>)}
-            </div>
-            <div>
                 {isProjects ? (<Button
                     onClick={() => console.log('chamou')}
-                    tittle={'Projects'}
+                    tittle={'Works'}
                     type={"button"}
-                    className={"giant-button text-color-green"}
+                    className={"giant-button text-color-green item"}
                     onMouseLeave={toggleIsProjects}
 
                 />) : (<h1
                     onMouseEnter={toggleIsProjects}
-                    className={"text-color-green"}
+                    className={"text-color-green item"}
                 >
                     I am
                 </h1>)}
-            </div>
-            <div>
                 {isContact ? (<Button
                     onClick={() => console.log('chamou')}
                     tittle={'Contact'}
                     type={"button"}
-                    className={"giant-button text-color-green"}
+                    className={"giant-button text-color-green item"}
                     onMouseLeave={toggleIsContact}
 
                 />) : (<h1
                     onMouseEnter={toggleIsContact}
-                    className={"text-color-green"}
+                    className={"text-color-green item"}
                 >
                     Renato
                 </h1>)}
