@@ -3,6 +3,7 @@ import '../styles/Global.css'
 import useNewText from '../hooks/useNewText.tsx'
 import Header from "../components/Header.tsx";
 import { Link } from "react-router-dom";
+import Footer from "../components/Footer.tsx";
 
 function Home() {
     const { isAbout,
@@ -69,6 +70,7 @@ function Home() {
                     Renato
                 </h1>)}
             </div>
+            <Footer />
         </>
     )
 }

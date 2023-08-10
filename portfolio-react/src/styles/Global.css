@@ -69,3 +69,15 @@
     font-size: 150px;
     margin: 1px;
 }
+
+.footer-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    padding: 1rem;
+}
