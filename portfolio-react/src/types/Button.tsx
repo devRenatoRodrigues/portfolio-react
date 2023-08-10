@@ -1,5 +1,5 @@
 export type Buttons = {
-    tittle: string,
+    title: string,
     onClick: (event: React.MouseEvent<HTMLButtonElement>) => void | undefined,
     type?: "button" | "submit" | "reset",
     className: string,
