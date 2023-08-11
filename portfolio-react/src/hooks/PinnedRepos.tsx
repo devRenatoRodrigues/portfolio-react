@@ -16,12 +16,16 @@ export default function PinnedRepos() {
 
     return (
         <div>
-            <h2>Repositórios do usuário {username}</h2>
+            <h2 className="text-color-white ">My Works</h2>
             <ul>
                 {repositories.map((repo: Repository) => (
                     <li
-                        className="text-color-white "
-                        key={repo.id}>{repo.name}</li>
+                        className="text-color-white"
+                        key={repo.id}>
+                        {repo.name}
+                        {repo.html_url}
+                        {repo.homepage}
+                    </li>
                 ))}
             </ul>
         </div>
