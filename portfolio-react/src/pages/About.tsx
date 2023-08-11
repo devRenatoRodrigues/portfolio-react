@@ -11,7 +11,7 @@ export default function About() {
                     className="text-color-white phrase"
                 >Hello World, I'm Renato Rodrigues from São Paulo, Brazil.
                 </h1>
-                <div className="phrase-container">
+                <div className="phrase-container-about">
                     <p className="text-color-white phrase">
                         Após anos trabalhando como vendedor autônomo, tomei a decisão de seguir um sonho antigo: me tornar desenvolvedor.
                         Minha experiência com programação vem desde de muito jovem, quando aos 12 anos criei um servidor para Tibia um MMORPG famoso.
@@ -36,7 +36,7 @@ export default function About() {
                         Meu objetivo não é apenas aperfeiçoar minhas habilidades técnicas, mas também contribuir para projetos significativos que impactem positivamente a vida das pessoas.
                         O propósito de minha jornada como desenvolvedor vai além do código; visa fazer a diferença através da tecnologia.
                     </p>
-                    <a href={Curriculum} download>My Resume </a>
+                    <a className="my-resume-link text-color-green" href={Curriculum} download>{`My Resume(PDF)`}</a>
                 </div>
 
 // criar tabela para colocar hardskills e sofskills

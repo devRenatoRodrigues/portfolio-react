@@ -119,6 +119,10 @@ p {
     margin-bottom: 3vh;
 }
 
+.phrase-container-about {
+    max-width: 95%;
+}
+
 @keyframes slideIn {
     0% {
         transform: translateY(-100%);
@@ -137,4 +141,8 @@ p {
 
 .phrase-container {
     max-width: 70%;
+}
+
+.my-resume-link {
+    font-size: 25px;
 }
