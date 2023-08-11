@@ -27,7 +27,7 @@ export default function About() {
                         O aprendizado constante é o que me alegra na programação. Tenho uma energia abundante na busca por autodesenvolvimento e crescimento profissional.
                     </p>
                     <p className="text-color-white phrase">
-                        Embora eu ainda não tenha completado o curso da Trybe, estou aprimorando minhas habilidades por conta própria.
+                        Atualmente estou cursando Desenvolvimento Web na Trybe, estou aprimorando minhas habilidades.
                         Desenvolvi projetos como um App de Receitas, Jogos de Trivia e muitos outros, utilizando tecnologias como TypeScript, JavaScript, Node.js e React.js.
                         Além disso, tenho exercitado minhas Soft Skills, colaborando com colegas de turma, seja esclarecendo ou tirando dúvidas e criando projetos em grupo.
                     </p>

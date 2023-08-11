@@ -4,6 +4,7 @@ import useNewText from '../hooks/useNewText.tsx'
 import Header from "../components/Header.tsx";
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer.tsx";
+import photo from "../assets/ia.png"
 
 function Home() {
     const { isAbout,
@@ -67,7 +68,9 @@ function Home() {
                     Renato
                 </h1>)}
 
-
+            </div>
+            <div className="photo-container">
+                <img className="bg-photo" src={photo} />
             </div>
             <Footer />
         </>
