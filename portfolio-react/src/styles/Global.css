@@ -29,7 +29,7 @@
 
 
 .giant-button {
-    font-size: 150px;
+    font-size: 115px;
     padding: 20px;
     background-color: transparent;
     border: none;
@@ -46,7 +46,7 @@
 .header-container {
     display: flex;
     align-items: center;
-    height: 8rem;
+    height: 5rem;
     justify-content: space-between;
 }
 
@@ -56,12 +56,16 @@
 }
 
 .back-button {
-    font-size: 25px;
+    font-size: 18px;
     padding: 20px;
     background-color: transparent;
     border: none;
     cursor: pointer;
     font-family: 'Exo', 'Cabin';
+}
+
+.back-text {
+    font-size: 18px;
 }
 
 
@@ -76,7 +80,7 @@
 }
 
 .vertical-center .item {
-    font-size: 150px;
+    font-size: 115px;
     margin: 1px;
 }
 
@@ -88,6 +92,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 12px;
     height: 3rem;
     padding: 1rem;
 }
@@ -96,8 +101,8 @@
     opacity: 1;
     transition: opacity 0.1s;
     transition: transform 0.3s;
-    width: 8rem;
-    height: 8rem;
+    width: 6rem;
+    height: 6rem;
 }
 
 
@@ -115,7 +120,7 @@
 p {
     font-family: 'Cabin';
     line-height: 170%;
-    font-size: 25px;
+    font-size: 15px;
     margin-bottom: 3vh;
 }
 
@@ -144,5 +149,5 @@ p {
 }
 
 .my-resume-link {
-    font-size: 25px;
+    font-size: 15px;
 }

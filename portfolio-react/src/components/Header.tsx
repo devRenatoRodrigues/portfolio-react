@@ -26,7 +26,7 @@ export default function Header() {
                 </Link>
             ) : (<h1
                 onMouseEnter={toggleIsBack}
-                className={"text-color-white item"}
+                className={"text-color-white back-text"}
             >
                 Back
             </h1>))}
