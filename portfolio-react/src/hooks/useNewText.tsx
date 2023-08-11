@@ -2,25 +2,31 @@ import { useState } from 'react'
 
 function useNewText() {
   const [isAbout, setIsAbout] = useState(false);
-  const [isProjects, setIsProjects] = useState(false);
+  const [isWork, setIsWork] = useState(false);
   const [isContact, setIsContact] = useState(false);
+  const [isBack, setIsBack] = useState(false);
 
   const toggleIsAbout = () => {
     setIsAbout(!isAbout);
   };
-  const toggleIsProjects = () => {
-    setIsProjects(!isProjects);
+  const toggleIsWork = () => {
+    setIsWork(!isWork);
   };
   const toggleIsContact = () => {
     setIsContact(!isContact);
   };
+  const toggleIsBack = () => {
+    setIsBack(!isBack);
+  };
   return {
     isAbout,
-    isProjects,
+    isWork,
     isContact,
     toggleIsAbout,
-    toggleIsProjects,
+    toggleIsWork,
     toggleIsContact,
+    toggleIsBack,
+    isBack,
   }
 }
 

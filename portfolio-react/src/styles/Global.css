@@ -47,11 +47,21 @@
     display: flex;
     align-items: center;
     height: 8rem;
+    justify-content: space-between;
 }
 
 .logo {
     max-width: 100%;
     height: 150%;
+}
+
+.back-button {
+    font-size: 25px;
+    padding: 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-family: 'Exo', 'Cabin';
 }
 
 
@@ -80,4 +90,51 @@
     align-items: center;
     height: 3rem;
     padding: 1rem;
+}
+
+.img-social-media {
+    opacity: 1;
+    transition: opacity 0.1s;
+    transition: transform 0.3s;
+    width: 8rem;
+    height: 8rem;
+}
+
+
+.img-social-media-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.img-social-media:hover {
+    opacity: 0.5;
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+p {
+    font-family: 'Cabin';
+    line-height: 170%;
+    font-size: 25px;
+    margin-bottom: 3vh;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.phrase {
+    animation: slideIn 1s;
+}
+
+.phrase-container {
+    max-width: 70%;
 }
