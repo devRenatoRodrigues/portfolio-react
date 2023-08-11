@@ -7,10 +7,10 @@ import Footer from "../components/Footer.tsx";
 
 function Home() {
     const { isAbout,
-        isProjects,
+        isWork,
         isContact,
         toggleIsAbout,
-        toggleIsProjects,
+        toggleIsWork,
         toggleIsContact,
     } = useNewText();
 
@@ -21,7 +21,6 @@ function Home() {
                 {isAbout ? (
                     <Link to="/about" >
                         <Button
-                            onClick={() => console.log('chamou')}
                             title={'About'}
                             type={"button"}
                             className={"giant-button text-color-white item"}
@@ -35,19 +34,18 @@ function Home() {
                 >
                     Hello.
                 </h1>)}
-                {isProjects ? (
+                {isWork ? (
                     <Link to="/works" >
                         <Button
-                            onClick={() => console.log('chamou')}
                             title={'Works'}
                             type={"button"}
                             className={"giant-button text-color-green item"}
-                            onMouseLeave={toggleIsProjects}
+                            onMouseLeave={toggleIsWork}
 
                         />
                     </Link>
                 ) : (<h1
-                    onMouseEnter={toggleIsProjects}
+                    onMouseEnter={toggleIsWork}
                     className={"text-color-green item"}
                 >
                     I am
@@ -55,7 +53,6 @@ function Home() {
                 {isContact ? (
                     <Link to="/contact" >
                         <Button
-                            onClick={() => console.log('chamou')}
                             title={'Contact'}
                             type={"button"}
                             className={"giant-button text-color-green item"}

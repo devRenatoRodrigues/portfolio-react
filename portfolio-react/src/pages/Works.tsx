@@ -1,9 +1,13 @@
+import Footer from "../components/Footer";
+import Header from "../components/Header";
+import PinnedRepos from "../hooks/PinnedRepos";
+
 export default function Works() {
     return (
-        <div>
-
-            <h1> Works</h1>
-
-        </div>
+        <>
+            <Header />
+            <PinnedRepos />
+            <Footer />
+        </>
     )
 }
