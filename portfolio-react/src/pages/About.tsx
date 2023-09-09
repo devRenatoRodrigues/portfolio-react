@@ -36,7 +36,7 @@ export default function About() {
                         Meu objetivo não é apenas aperfeiçoar minhas habilidades técnicas, mas também contribuir para projetos significativos que impactem positivamente a vida das pessoas.
                         O propósito de minha jornada como desenvolvedor vai além do código; visa fazer a diferença através da tecnologia.
                     </p>
-                    <a className="my-resume-link text-color-green" href={Curriculum} download>{`My Resume(PDF)`}</a>
+                    <a className="my-resume-link text-color-green" href={Curriculum} download>{`Curriculum(PDF)`}</a>
                 </div>
 
 // criar tabela para colocar hardskills e sofskills
