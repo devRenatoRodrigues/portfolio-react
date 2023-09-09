@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 /* ------ Fonts ------ */
 @font-face {
     font-family: 'Exo';
@@ -37,7 +42,7 @@
     font-family: 'Exo', 'Cabin';
 }
 
-:root {
+body {
     font-family: 'Exo', 'Cabin';
     background-color: black;
 }
@@ -164,7 +169,7 @@ p {
     max-width: 150%;
     z-index: -9;
     position: fixed;
-    left: 89%;
+    left: 88%;
     top: 55%;
     transform: translate(-65%, -55%);
     height: auto;

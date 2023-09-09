@@ -5,6 +5,8 @@ export default async function fetchGithub(username: string): Promise<Repository[
     try {
         const response = await axios.get(`https://api.github.com/users/${username}/repos`);
         const repositories: Repository[] = response.data;
+        console.log(response.data);
+        
         const pinnedRepositories = repositories.filter(repo => repo.name.includes('pin'));
         return pinnedRepositories;
     } catch (error) {

@@ -1,6 +1,6 @@
 import Footer from "../components/Footer"
 import Header from "../components/Header"
-import Curriculum from "../public/Curriculum.pdf"
+import Curriculum from "../public/CurriculumNovo.pdf"
 
 export default function About() {
     return (
